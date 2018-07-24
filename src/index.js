@@ -1,7 +1,9 @@
 import SuiButton from "./components/button.component.vue"
+import SuiTabs from "./components/tabs.component.vue"
 
 const components = {
-	SuiButton
+	SuiButton,
+	SuiTabs
 }
 
 if(window.Vue){

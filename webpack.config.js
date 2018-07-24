@@ -8,7 +8,9 @@ module.exports = {
 	},
 	module:{
 		rules:[
-			{test:/\.js$/,loader:"babel-loader"},
+			{test:/\.js$/,loader:"babel-loader",options: {
+				presets: ['stage-1']
+			}},
 			{test:/\.vue$/,loader:"vue-loader"},
 			{test: /\.css$/, loader: 'style-loader!css-loader' },
             {test: /\.(png|jpg)$/, loader: 'url-loader' },
