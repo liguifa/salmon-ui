@@ -1,10 +1,12 @@
 import SuiButton from "./components/button.component.vue"
 import SuiTabs from "./components/tabs.component.vue"
+import SuiInput from "./components/input.component.vue"
 import SuiTimeline from "./components/timeline.component.vue"
 
 const components = {
 	SuiButton,
 	SuiTabs,
+	SuiInput,
 	SuiTimeline
 }
 
