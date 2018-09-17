@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.config.js --watch --hot"
+    "build": "webpack --config webpack.config.js --watch --hot",
+    "dev": "webpack-dev-server --inline --hot --config config/webpack.dev.config.js"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -15,11 +17,12 @@
     "css-loader": "^1.0.0",
     "eslint": "^5.2.0",
     "style-loader": "^0.21.0",
-    "url-loader": "^1.0.1",
-    "vue-loader": "^15.2.6",
-    "vue-template-compiler": "^2.5.16",
+    "url-loader": "^1.1.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.16.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   },
   "eslintConfig": {
     "root": true,

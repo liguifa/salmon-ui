@@ -1,13 +1,19 @@
-import SuiButton from "./components/button.component.vue"
-import SuiTabs from "./components/tabs.component.vue"
-import SuiInput from "./components/input.component.vue"
-import SuiTimeline from "./components/timeline.component.vue"
+import Button from "./components/button.component.vue"
+import Tabs from "./components/tabs.component.vue"
+import Input from "./components/input.component.vue"
+import Timeline from "./components/timeline.component.vue"
+import Menu from "./components/menu.component.vue"
+import MenuItem from "./components/menuitem.component.vue"
+import Broadside from "./components/broadside.component.vue"
 
 const components = {
-	SuiButton,
-	SuiTabs,
-	SuiInput,
-	SuiTimeline
+	Button,
+	Tabs,
+	Input,
+	Timeline,
+	Menu,
+	MenuItem,
+	Broadside
 }
 
 if(window.Vue){
@@ -16,4 +22,10 @@ if(window.Vue){
 	})
 }
 
-export default components
+const install = function(Vue, opts = {}) {
+	Vue.mixin({
+		components:components
+	});
+};
+
+export default {install};
