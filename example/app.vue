@@ -56,4 +56,23 @@ html,body,#app {
     border: 5px solid transparent;
     border-radius: 20px;
 }
+
+.code{
+    display: block;
+    margin: 12px 0;
+    padding: 12px 20px;
+    background: #292b36;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    overflow: auto;
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    white-space: pre;
+    color: #ffffff !important;
+    line-height: 25px;
+    overflow:auto;
+    width: calc(100% - 40px);
+    text-overflow: ellipsis;
+}
 </style>

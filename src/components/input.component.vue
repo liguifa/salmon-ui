@@ -1,6 +1,6 @@
 <template>
     <div class="sui-input">
-        <input :type="type" class="sui-input-text" v-model="value" :placeholder="placeholder" />
+        <input :type="type" class="sui-input-text" v-model="val" :placeholder="placeholder" />
     </div>
 </template>
 
@@ -14,11 +14,19 @@ export default {
         placeholder:{
             type:String,
             default:""
+        },
+        value:{
+            type:String
+        }
+    },
+    watch:{
+        val(){
+            this.$emit("input", this.val);
         }
     },
     data(){
         return {
-            value:null
+            val:null
         }
     }
 }

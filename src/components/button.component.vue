@@ -7,13 +7,17 @@ export default {
 	props:{
 		type:{
 			validator:value=>{
-				return ["default"].includes(value)
+				return ["default","primary","normal","warn","danger"].includes(value)
 			},
 			default:"default"
 		},
 		text:{
 			type:String,
 			required:true
+		},
+		ghost:{
+			type:Boolean,
+			default:false
 		}
 	},
 	methods:{
@@ -23,7 +27,11 @@ export default {
 	},
 	computed:{
 		classes(){
-			return `sui-button sui-button-${this.type}`
+			let classes = `sui-button sui-button-${this.type}`;
+			if(this.ghost){
+				classes += ' sui-button-ghost';
+			}
+			return classes;
 		}
 	}
 }
@@ -83,5 +91,33 @@ export default {
 		background-color: #FF5722;
 		border-color:#FF5722;
 		color:#fff;
+	}
+
+	.sui-button-ghost{
+		background-color: transparent !important;
+	}
+
+	.sui-button-ghost.sui-button-default{
+		color:#1ab394 !important;
+	}
+
+	.sui-button-ghost.sui-button-primary{
+		color:#000 !important;
+	}
+
+	.sui-button-ghost.sui-button-normal{
+		color:#1E9FFF !important;
+	}
+
+	.sui-button-ghost.sui-button-warm{
+		color:#F7B824 !important;
+	}
+
+	.sui-button-ghost.sui-button-danger{
+		color:#FF5722 !important;
+	}
+
+	.sui-button-ghost:active{
+		color:red !important;
 	}
 </style>
