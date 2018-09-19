@@ -45,4 +45,8 @@ html,body,#app{
 	padding-top: 300px;
 	color: #ffffff;
 }
+
+.home-title h1{
+	color:#ffffff;
+}
 </style>

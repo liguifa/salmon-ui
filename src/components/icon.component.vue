@@ -746,5 +746,6 @@ export default {
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
     cursor: pointer;
+	user-select: none;
 }
 </style>

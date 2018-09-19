@@ -12,6 +12,7 @@
 				<MenuItem title="开关" url="#/component/switch" />
 				<MenuItem title="选择器" url="#/component/select" />
 				<MenuItem title="评分" url="#/component/rate" />
+				<MenuItem title="颜色选择器" url="#/component/color" />
 				<MenuItem title="表格" url="#/component/table" />
 				<MenuItem title="菜单" url="#/component/menu" />
 				<MenuItem title="时间线" url="#/component/timeline" />
@@ -61,7 +62,7 @@ html,body,#app{
 	width: calc(100% - 260px)
 }
 
-.component *{
+h1,h2,h3,h4,span,p{
 	color: #41464b;
 }
 

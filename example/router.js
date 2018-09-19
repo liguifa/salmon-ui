@@ -1,7 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Salmon from "../src/index";
 import Home from "./view/home.vue";
 import Component from "./view/component.vue";
+import Install from "./view/install.vue";
 import Menu from "./view/menu.vue";
 import Button from "./view/button.vue";
 import Timeline from "./view/timeline.vue";
@@ -14,6 +16,7 @@ import Table from "./view/table.vue";
 import Video from "./view/video.vue";
 import Select from "./view/select.vue";
 import Rate from "./view/rate.vue";
+import Color from "./view/color.vue";
 
 Vue.use(Router)
 
@@ -30,9 +33,14 @@ const router = new Router({
             component: Component,
             children: [
                 {
-                  path: 'button',
-                  name: 'button',
-                  component: Button
+                    path: 'install',
+                    name: 'install',
+                    component: Install
+                },
+                {
+                    path: 'button',
+                    name: 'button',
+                    component: Button
                 },
                 {
                     path: 'menu',
@@ -88,10 +96,24 @@ const router = new Router({
                     path: 'rate',
                     name: 'rate',
                     component: Rate
+                },
+                {
+                    path: 'color',
+                    name: 'color',
+                    component: Color
                 }
             ]
         }
     ]
 })
+
+router.beforeEach((to, from, next) => {
+    Salmon.LoadBar.start();
+    next();
+});
+
+router.afterEach(route => {
+    Salmon.LoadBar.finish();
+});
 
 export default router;

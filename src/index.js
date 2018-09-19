@@ -16,6 +16,8 @@ import Thead from "./components/thead.component.vue"
 import Video from "./components/video.component.vue"
 import Select from "./components/select.component.vue"
 import Rate from "./components/rate.component.vue"
+import ColorPicker from "./components/color.picker.component.vue"
+import LoadBar from "./common/loadbar"
 
 const components = {
 	Button,
@@ -35,7 +37,8 @@ const components = {
 	Thead,
 	Video,
 	Select,
-	Rate
+	Rate,
+	ColorPicker
 }
 
 if(window.Vue){
@@ -50,4 +53,4 @@ const install = function(Vue, opts = {}) {
 	});
 };
 
-export default {install};
+export default {install, LoadBar};
