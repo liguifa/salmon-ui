@@ -15,6 +15,7 @@
 				<MenuItem title="颜色选择器" url="#/component/color" />
 				<MenuItem title="表格" url="#/component/table" />
 				<MenuItem title="菜单" url="#/component/menu" />
+				<MenuItem title="分页" url="#/component/page" />
 				<MenuItem title="时间线" url="#/component/timeline" />
 				<MenuItem title="视频播放器" url="#/component/video" />
 			</Broadside>
