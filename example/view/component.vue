@@ -17,6 +17,10 @@
 				<MenuItem title="菜单" url="#/component/menu" />
 				<MenuItem title="分页" url="#/component/page" />
 				<MenuItem title="时间线" url="#/component/timeline" />
+				<MenuItem title="弹出框" url='#/component/window' />
+				<MenuItem title="警告" url='#/component/alert' />
+				<MenuItem title="确认对话框" url='#/component/confirm' />
+				<MenuItem title="抽屉" url='#/component/drawer' />
 				<MenuItem title="视频播放器" url="#/component/video" />
 			</Broadside>
 			<div>

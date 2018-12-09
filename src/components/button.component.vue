@@ -18,11 +18,18 @@ export default {
 		ghost:{
 			type:Boolean,
 			default:false
+		},
+		stopPropagation: {
+			type: Boolean,
+			default: false
 		}
 	},
 	methods:{
-		onclick(){
-			this.$emit("on-click")
+		onclick(e){
+			this.$emit("on-click");
+			if(this.stopPropagation) {
+				e.stopPropagation();
+			}
 		}
 	},
 	computed:{

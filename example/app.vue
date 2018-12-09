@@ -2,7 +2,7 @@
   <div id="app" ref="app">
 	<Menu title="Salmon UI" logo="./assets/logo.png">
 		<MenuItem title="首页" url="#/" />
-		<MenuItem title="组件" url="#/component/button" />
+		<MenuItem title="组件" url="#/component/install" />
 		<MenuItem title="源码" url="https://github.com/liguifa/salmon-ui" />
 	</Menu>
     <div class="sui-body">
