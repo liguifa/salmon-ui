@@ -17,6 +17,11 @@ import Video from "./components/video.component.vue"
 import Select from "./components/select.component.vue"
 import Rate from "./components/rate.component.vue"
 import ColorPicker from "./components/color.picker.component.vue"
+import Page from "./components/page.component.vue"
+import Window from "./components/window.component.vue"
+import Alert from "./components/alert.component.vue"
+import Confirm from "./components/confirm.component.vue"
+import Drawer from "./components/drawer.component.vue"
 import LoadBar from "./common/loadbar"
 
 const components = {
@@ -38,7 +43,12 @@ const components = {
 	Video,
 	Select,
 	Rate,
-	ColorPicker
+	ColorPicker,
+	Page,
+	Window,
+	Alert,
+	Confirm,
+	Drawer
 }
 
 if(window.Vue){
@@ -49,7 +59,7 @@ if(window.Vue){
 
 const install = function(Vue, opts = {}) {
 	Vue.mixin({
-		components:components
+		components: components
 	});
 };
 

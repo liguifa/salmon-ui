@@ -17,6 +17,11 @@ import Video from "./view/video.vue";
 import Select from "./view/select.vue";
 import Rate from "./view/rate.vue";
 import Color from "./view/color.vue";
+import Page from "./view/page.vue";
+import Window from "./view/window.vue";
+import Alert from "./view/alert.vue";
+import Confirm from "./view/confirm.vue";
+import Drawer from "./view/drawer.vue";
 
 Vue.use(Router)
 
@@ -101,6 +106,31 @@ const router = new Router({
                     path: 'color',
                     name: 'color',
                     component: Color
+                },
+                {
+                    path: 'page',
+                    name: 'page',
+                    component: Page
+                },
+                {
+                    path: 'window',
+                    name: 'window',
+                    component: Window
+                },
+                {
+                    path: 'alert',
+                    name: 'alert',
+                    component: Alert
+                },
+                {
+                    path: 'confirm',
+                    name: 'confirm',
+                    component: Confirm
+                },
+                {
+                    path: 'drawer',
+                    name: 'drawer',
+                    component: Drawer
                 }
             ]
         }
