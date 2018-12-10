@@ -7,7 +7,7 @@
     "url": "https://github.com/liguifa/salmon-ui"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js --watch --hot",
+    "build": "webpack --config config/webpack.prod.config.js --progress --color",
     "dev": "webpack --inline --hot --config config/webpack.dev.config.js"
   },
   "dependencies": {
