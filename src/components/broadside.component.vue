@@ -1,5 +1,5 @@
 <template>
-	<div class="sui-broadside">
+	<div :class="classes">
 		<ul>
 			<slot></slot>
 		</ul>
@@ -8,7 +8,17 @@
 
 <script>
 export default {
-
+	props:{
+		theme: {
+			type: String,
+			default: "light"
+		}
+	},
+	computed: {
+		classes() {
+			return `sui-broadside sui-broadside-theme-${this.theme}`;
+		}
+	}
 }
 </script>
 
@@ -18,6 +28,24 @@ export default {
 	/* height: 100%; */
 	background: #ffffff;
 	border-right: #DCDEE2 solid 1px;
+}
+
+.sui-broadside-theme-dark{
+	background: #363e4f;
+	border-right: none;
+}
+
+.sui-broadside-theme-dark a{
+	color: #ffffff !important;
+}
+
+.sui-broadside-theme-dark .sui-menuitem-li-h1{
+	background: #515a6e;
+	padding: 14px 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .2s ease-in-out;
 }
 
 .sui-broadside > ul{

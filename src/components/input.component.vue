@@ -39,14 +39,23 @@ export default {
     }
 
     .sui-input-text{
-        height: 34px;
-        border:1px solid #e5e6e7;
-        padding: 6px 12px;
-        box-sizing: border-box;
-        color:#676a6c;
+        display: inline-block;
+    width: 100%;
+    height: 22px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
     }
 
     .sui-input-text:focus{
-        outline: #1ab394 1px solid;
+        outline: #2d8cf0 1px solid;
     }
 </style>

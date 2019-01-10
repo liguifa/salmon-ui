@@ -1,5 +1,7 @@
 <template>
-	<button :class="classes" @click="onclick">{{text}}</button>
+	<button :class="classes" @click="onclick">
+		<span>{{text}}</span>
+	</button>
 </template>
 
 <script>
@@ -39,18 +41,29 @@ export default {
 
 <style>
 	.sui-button{
-		font: inherit;
-		height: 32px;
-		line-height: 32px;
-		padding: 0 15px;
-		color: #FFF;
-		white-space: nowrap;
+		display: inline-block;
+		width: 73px;
+		height: 31px;
+		margin-bottom: 0;
+		font-weight: 400;
 		text-align: center;
-		border: 1px solid #DDD;
-		border-radius: 0;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
 		cursor: pointer;
-		transition: all .2s;
+		background-image: none;
+		border: 1px solid transparent;
+		white-space: nowrap;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		padding: 5px 15px 6px;
+		font-size: 12px;
+		border-radius: 4px;
+		vertical-align: middle;
+		line-height: 1.5;
 		outline: none;
+		transition: color .2s linear,background-color .2s linear,border .2s linear,box-shadow .2s linear;
 	}
 
 	.sui-button:hover{
@@ -58,33 +71,31 @@ export default {
 	}
 
 	.sui-button:active{
-		background-color:red;
-		border-color: red;
-		color:#fff;
+		opacity: 0.6;
 	}
 
 	.sui-button-default{
-		background-color: #1ab394;
-		border-color: #1ab394;
-		color: #FFF;
+		color: #515a6e;
+    	background-color: #fff;
+    	border-color: #dcdee2;
 	}
 
 	.sui-button-primary{
-		background-color: #fff;
-		border-color:#c9c9c9;
-		color:#000;
+		color: #fff;
+    	background-color: #2d8cf0;
+    	border-color: #2d8cf0;
 	}
 
 	.sui-button-normal{
-		background-color: #1E9FFF;
-		border-color:#1E9FFF;
-    	color: #fff;
+		color: #fff;
+    	background-color: #2db7f5;
+    	border-color: #2db7f5;
 	}
 
-	.sui-button-warm{
-		background-color: #F7B824;
-		border-color:#F7B824;
-		color:#fff;
+	.sui-button-warn{
+		color: #fff;
+    	background-color: #ffad33;
+    	border-color: #ffad33;
 	}
 
 	.sui-button-danger{
@@ -118,6 +129,6 @@ export default {
 	}
 
 	.sui-button-ghost:active{
-		color:red !important;
+		opacity: 0.6;
 	}
 </style>

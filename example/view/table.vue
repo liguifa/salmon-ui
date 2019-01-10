@@ -5,7 +5,7 @@
 		<h3>示例</h3>
 		<div>
 			<Table :items="persons">
-				<Thead title="姓名" />
+				<Thead title="姓名" key="name" isSorted @sort="sort" />
 				<Thead title="性别" />
 				<Thead title="年龄" />
 				<Thead title="手机" />
@@ -49,6 +49,11 @@ export default {
 				["title", "表格头标题","String","-"],
 				["width", "表格头宽度","String","-"],
 			]
+		}
+	},
+	methods: {
+		sort(sortInfo) {
+			alert(sortInfo)
 		}
 	},
 	mounted(){

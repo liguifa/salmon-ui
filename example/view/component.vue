@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="component">
-			<Broadside>
+			<Broadside theme="dark">
 				<MenuItem title="快速入门" url="#/component/install" />
 				<MenuItem title="组件" level="h1" />
 				<MenuItem title="图标" url="#/component/icon" />
@@ -63,9 +63,9 @@ html,body,#app{
 	width: calc(100% - 260px)
 }
 
-h1,h2,h3,h4,span,p{
+/* h1,h2,h3,h4,span,p{
 	color: #41464b;
-}
+} */
 
 .sui-footer{
     height: 40px;

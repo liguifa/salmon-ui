@@ -19,6 +19,7 @@ import Rate from "./components/rate.component.vue"
 import ColorPicker from "./components/color.picker.component.vue"
 import Page from "./components/page.component.vue"
 import LoadBar from "./common/loadbar"
+import "./common/style.css";
 
 const components = {
 	Button,

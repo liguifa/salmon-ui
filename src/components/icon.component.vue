@@ -1,5 +1,5 @@
 <template>
-	<i class='sui-icon' v-html="icon" @click="onclick"></i>
+	<i class='sui-icon' :style="{fontSize:`${size}px`}" v-html="icon" @click="onclick"></i>
 </template>
 
 <script>
@@ -54,7 +54,7 @@
 	icon_thumbs_u:"&#xe830;",
 	icon_thumbs_dow:"&#xe831;",
 	icon_download:"&#xe832;",
-	icon_uploa:"&#xe833;",
+	icon_upload:"&#xe833;",
 	icon_forwar:"&#xe834;",
 	icon_expor:"&#xe835;",
 	icon_penci:"&#xe836;",
@@ -340,11 +340,11 @@
 	icon_bitbucket_square:"&#xf172;",
 	icon_tumbl:"&#xf173;",
 	icon_tumblr_square:"&#xf174;",
-	icon_dow:"&#xf175;",
-	icon_u:"&#xf176;",
-	icon_lef:"&#xf177;",
-	icon_righ:"&#xf178;",
-	icon_appl:"&#xf179;",
+	icon_down:"&#xf175;",
+	icon_up:"&#xf176;",
+	icon_left:"&#xf177;",
+	icon_right:"&#xf178;",
+	icon_apply:"&#xf179;",
 	icon_window:"&#xf17a;",
 	icon_androi:"&#xf17b;",
 	icon_linu:"&#xf17c;",
@@ -689,6 +689,10 @@ export default {
 		type: {
 			type:String,
 			required:true
+		},
+		size: {
+			type: Number,
+			default: 32
 		}
 	},
 	methods:{
@@ -718,34 +722,18 @@ export default {
      
      
 .sui-icon{
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-	font-weight: 400;
-    speak: none;
     display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    /* opacity: .8; */
-    /* For safety - reset parent styles, that can break glyph codes*/
+    font-family: fontello;
+    speak: none;
+    font-style: normal;
+    /* font-weight: 400; */
     font-variant: normal;
     text-transform: none;
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
-    /* You can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-    cursor: pointer;
-	user-select: none;
+    text-rendering: auto;
+    line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: middle;
+	color: #5c6b77;
+	font-size: 32px;
 }
 </style>

@@ -49,14 +49,23 @@ export default {
 }
 
 .sui-select-title{
-	height: 34px;
-	width: 100%;
-    border:1px solid #e5e6e7;
-    padding: 6px 12px;
+	display: block;
     box-sizing: border-box;
-    color:#676a6c;
-	border-radius: 2px;
-	cursor: pointer;
+    outline: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+	border: 1px solid #dcdee2;
+	height: 32px;
+	padding: 2px 4px;
+	transition: all .2s ease-in-out;
+	font-size: 16px;
+	color: #515a6e;
 }
 .sui-select-title span{
 	margin-top: 0px;
@@ -65,34 +74,47 @@ export default {
 
 .sui-select-title i{
 	float: right;
-	font-size: 22px;
-	margin-right: -4px;
-	margin-top: 0px;
-	user-select: none;;
+	margin-right: 8px;
+	margin-top: 2px;
+	user-select: none;
+	font-size: 24px !important;
+    color: #808695;
+    transition: all .2s ease-in-out;
 }
 
 .sui-select-menu{
-	border:1px solid #e5e6e7;
-	border-top: 0px;
+	min-width: 200px;
+    position: absolute;
+    will-change: top, left;
+	transform-origin: center bottom 0px;
+	max-height: 300px;
+    overflow: auto;
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 900;
 	width: 100%;
-	position: absolute;
-	top:34px;
-	left: 0px;
-	background: #ffffff;
-	box-sizing: border-box;
 }
 
 .sui-select-menu-item{
-	width: 100%;
-	height: 40px;
-	padding: 10px 0px;
-	padding-left: 14px;
-	box-sizing: border-box;
-	cursor: pointer;
+	margin: 0;
+    line-height: normal;
+    padding: 7px 16px;
+    clear: both;
+    color: #515a6e;
+    font-size: 12px!important;
+    white-space: nowrap;
+    list-style: none;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
 }
 
 .sui-select-menu-item:hover{
-	background: #4CAF50;
+	background: #2d8cf0;
 	color:#ffffff;
 }
 </style>

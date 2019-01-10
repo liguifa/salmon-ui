@@ -45,11 +45,11 @@ export default {
 }
 
 .sui-switch-active{
-	border:1px solid #4CAF50;
+	border:1px solid #2d8cf0;
 }
 
 .sui-switch-on{
-	background: #4CAF50;
+	background: #2d8cf0;
 	width: 100%;
 	height: 100%;
 	padding: 2px;
