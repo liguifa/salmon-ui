@@ -61,7 +61,7 @@ export default {
 				"ok",
 				"ok_circle",
 				"ok_circled",
-				"cance",
+				"cancel",
 				"cancel_circle",
 				"cancel_circled",
 				"plu",

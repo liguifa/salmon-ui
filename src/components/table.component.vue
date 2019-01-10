@@ -67,7 +67,6 @@ export default {
 .sui-table-title th{
 	border-left: 1px solid #DCDEE2;
 	border-right: 1px solid #DCDEE2;
-	position: relative;
     padding: 9px 15px;
     min-height: 20px;
     line-height: 20px;
@@ -84,7 +83,6 @@ export default {
 
 .sui-table-body td{
 	border: 1px solid #DCDEE2;
-	position: relative;
     padding: 9px 15px;
     min-height: 20px;
     line-height: 20px;

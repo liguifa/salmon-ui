@@ -30,7 +30,7 @@
 	icon_ok:"&#xe818;",
 	icon_ok_circle:"&#xe819;",
 	icon_ok_circled:"&#xe81a;",
-	icon_cance:"&#xe81b;",
+	icon_cancel:"&#xe81b;",
 	icon_cancel_circle:"&#xe81c;",
 	icon_cancel_circled:"&#xe81d;",
 	icon_plu:"&#xe81e;",
